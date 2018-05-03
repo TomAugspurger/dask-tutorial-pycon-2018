@@ -22,6 +22,9 @@ conda env create
 # Activate the environment
 conda activate dask-pycon
 
+# Download data
+python3 prep_data.py
+
 # TODO: labextensions?
 
 # Start jupyterlab
@@ -44,6 +47,9 @@ python3 -m venv .env
 # See https://docs.python.org/3/library/venv.html#creating-virtual-environments
 # For bash it's
 source .env/bin/activate
+
+# Download data
+python3 prep_data.py
 
 # Install the dependencies
 python3 -m pip install -r requirements.txt
