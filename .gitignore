@@ -1,3 +1,4 @@
 data/nycflights/*
 data/flightjson/*
 .ipynb_checkpoints/*
+.idea/
