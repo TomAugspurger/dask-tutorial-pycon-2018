@@ -1,5 +1,6 @@
 data/nycflights/*
 data/flightjson/*
 .ipynb_checkpoints/*
+.idea/
 __pycache__
 .env/
