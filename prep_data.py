@@ -3,13 +3,25 @@ from __future__ import print_function
 import os
 import pandas as pd
 import tarfile
+import urllib.request
 from glob import glob
 
 print("Setting up data directory")
 print("-------------------------")
 
-flightdir = os.path.join('data', 'nycflights')
-jsondir = os.path.join('data', 'flightjson')
+data_dir = 'data'
+flights_raw = os.path.join(data_dir, 'nycflights.tar.gz')
+flightdir = os.path.join(data_dir, 'nycflights')
+jsondir = os.path.join(data_dir, 'flightjson')
+
+if not os.path.exists(data_dir):
+    os.makedir(data_dir)
+
+if not os.path.exists(flights_raw):
+    print("- Downloading NYC Flights dataset... ", end='', flush=True)
+    url = "https://storage.googleapis.com/dask-tutorial-data/nycflights.tar.gz"
+    urllib.request.urlretrieve(url, flights_raw)
+
 
 if not os.path.exists(flightdir):
     print("- Extracting flight data... ", end='', flush=True)
