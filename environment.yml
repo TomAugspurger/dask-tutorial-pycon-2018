@@ -5,14 +5,16 @@ dependencies:
  - jupyterlab
  - numpy
  - pandas
+ - scikit-learn
  - matplotlib
  - numba
+ - ipywidgets
  - dask
+ - dask-ml
  - distributed
  - memory_profiler
  - h5py
  - snakeviz=0.4.0
- - accelerate
  - scipy
  - pytables
  - s3fs
