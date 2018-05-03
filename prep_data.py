@@ -21,6 +21,7 @@ if not os.path.exists(flights_raw):
     print("- Downloading NYC Flights dataset... ", end='', flush=True)
     url = "https://storage.googleapis.com/dask-tutorial-data/nycflights.tar.gz"
     urllib.request.urlretrieve(url, flights_raw)
+    print("done", flush=True)
 
 
 if not os.path.exists(flightdir):
