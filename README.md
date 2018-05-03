@@ -2,15 +2,57 @@
 
 Materials for the [Dask tutorial at PyCon 2018](https://us.pycon.org/2018/schedule/presentation/47/).
 
-# Setup
+## First Time Setup
 
-1. Clone the repository
+[Install Miniconda](https://conda.io/miniconda.html) or ensure you have Python 3.6 installed on your system.
 
-git clone <TODO>
+```
+# Update conda
+conda update -n base conda
 
-If you don't have git, then you can download a zip.
+# Clone the repository
+git clone https://github.com/TomAugspurger/dask-tutorial-pycon-2018
 
-2. Install Miniconda (or ensure you have python 3.6)
-3. Create the environment
-4. Start the notebook server
-5. Log into the cluster
+# Enter the repository
+cd dsak-tutorial-pycon-2018
+
+# Create the environment
+conda env create
+
+# Activate the environment
+conda activate dask-pycon
+
+# TODO: labextensions?
+
+# Start jupyterlab
+jupyter lab
+```
+
+If you aren't using conda
+
+```
+# Clone the repository
+git clone https://github.com/TomAugspurger/dask-tutorial-pycon-2018
+
+# Enter the repository
+cd dsak-tutorial-pycon-2018
+
+# Create a virtualenv
+python3 -m venv .env
+
+# Activate the env
+# See https://docs.python.org/3/library/venv.html#creating-virtual-environments
+# For bash it's
+source .env/bin/activate
+
+# Install the dependencies
+python3 -m pip install -r requirements.txt
+
+# Start jupyterlab
+jupyter lab
+```
+
+## Connect to the Cluster
+
+We have a [pangeo](https://github.com/pangeo-data/pangeo) deployment running that'll provide everyone with their own cluster to try out Dask on some larger problems.
+You can log into the cluster by going to:
