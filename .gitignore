@@ -4,3 +4,4 @@ data/flightjson/*
 .idea/
 __pycache__
 .env/
+data/
