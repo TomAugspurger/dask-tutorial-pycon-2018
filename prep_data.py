@@ -15,7 +15,7 @@ flightdir = os.path.join(data_dir, 'nycflights')
 jsondir = os.path.join(data_dir, 'flightjson')
 
 if not os.path.exists(data_dir):
-    os.makedir(data_dir)
+    os.mkdir(data_dir)
 
 if not os.path.exists(flights_raw):
     print("- Downloading NYC Flights dataset... ", end='', flush=True)
