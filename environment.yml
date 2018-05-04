@@ -1,25 +1,26 @@
 name: dask-pycon
 dependencies:
- - python=3
- - jupyter
- - jupyterlab
- - numpy
- - pandas
- - scikit-learn
- - matplotlib
- - numba
- - ipywidgets
  - dask
  - dask-ml
  - distributed
- - memory_profiler
- - h5py
- - snakeviz=0.4.0
- - scipy
- - pytables
- - s3fs
+ - gcsfs
  - graphviz
+ - h5py
+ - ipywidgets
+ - jupyter
+ - jupyterlab
+ - matplotlib
+ - memory_profiler
+ - numba
+ - numpy
+ - pandas
  - pillow
+ - pytables
+ - python=3
+ - s3fs
+ - scikit-learn
+ - scipy
+ - snakeviz=0.4.0
  - pip:
    - graphviz
    - cachey
