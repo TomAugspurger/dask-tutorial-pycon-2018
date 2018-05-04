@@ -4,13 +4,18 @@ Materials for the [Dask tutorial at PyCon 2018](https://us.pycon.org/2018/schedu
 
 ## First Time Setup
 
+If you don't have `git` installed, you can download a ZIP copy of the repository using the green button above.
+Note that the file will be called `dask-tutorial-pycon-2018-master`, instead of `dask-tutorial-pycon-2018`.
+Adjust the commands below accordingly.
+
+
 [Install Miniconda](https://conda.io/miniconda.html) or ensure you have Python 3.6 installed on your system.
 
 ```
 # Update conda
-conda update -n base conda
+conda update conda
 
-# Clone the repository
+# Clone the repository. Or download the ZIP and add `-master` to the name.
 git clone https://github.com/TomAugspurger/dask-tutorial-pycon-2018
 
 # Enter the repository
@@ -23,7 +28,7 @@ conda env create
 conda activate dask-pycon
 
 # Download data
-python3 prep_data.py
+python prep_data.py
 
 # Start jupyterlab
 jupyter lab
@@ -32,7 +37,7 @@ jupyter lab
 If you aren't using conda
 
 ```
-# Clone the repository
+# Clone the repository. Or download the ZIP and add `-master` to the name.
 git clone https://github.com/TomAugspurger/dask-tutorial-pycon-2018
 
 # Enter the repository
@@ -46,11 +51,11 @@ python3 -m venv .env
 # For bash it's
 source .env/bin/activate
 
-# Download data
-python3 prep_data.py
-
 # Install the dependencies
-python3 -m pip install -r requirements.txt
+python -m pip install -r requirements.txt
+
+# Download data
+python prep_data.py
 
 # Start jupyterlab
 jupyter lab
