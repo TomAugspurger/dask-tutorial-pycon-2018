@@ -5,3 +5,4 @@ data/flightjson/*
 __pycache__
 .env/
 data/
+mydask.png
