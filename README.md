@@ -14,7 +14,7 @@ conda update -n base conda
 git clone https://github.com/TomAugspurger/dask-tutorial-pycon-2018
 
 # Enter the repository
-cd dsak-tutorial-pycon-2018
+cd dask-tutorial-pycon-2018
 
 # Create the environment
 conda env create
@@ -24,8 +24,6 @@ conda activate dask-pycon
 
 # Download data
 python3 prep_data.py
-
-# TODO: labextensions?
 
 # Start jupyterlab
 jupyter lab
