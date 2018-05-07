@@ -81,14 +81,16 @@ def weather(growth=3200):
     if all(os.path.exists(fn.replace('small', 'big')) for fn in filenames):
         return
 
-    from scipy.misc import imresize
+    from skimage.transform import resize
     import h5py
 
     for fn in filenames:
         with h5py.File(fn, mode='r') as f:
             x = f['/t2m'][:]
 
-        y = imresize(x, growth)
+        new_shape = tuple(s * growth // 100 for s in x.shape)
+
+        y = resize(x, new_shape, mode='constant')
 
         out_fn = os.path.join('data', 'weather-big', os.path.split(fn)[-1])
 

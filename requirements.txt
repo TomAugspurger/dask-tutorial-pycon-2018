@@ -84,6 +84,7 @@ requests-oauthlib==0.8.0
 rsa==3.4.2
 s3fs==0.1.4
 s3transfer==0.1.13
+scikit-image
 scikit-learn==0.19.1
 scipy==1.0.1
 Send2Trash==1.5.0

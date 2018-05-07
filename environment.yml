@@ -17,6 +17,7 @@ dependencies:
  - pytables
  - python=3.6
  - s3fs
+ - scikit-image
  - scikit-learn
  - scipy
  - pip:
