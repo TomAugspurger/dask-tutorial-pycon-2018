@@ -1,3 +1,3 @@
-process_pool = concurrent.futures.ProcessPoolExecutor(max_workers=4)
-results = process_pool.map(fib, [34, 34, 34, 34])
-%time list(results)
+with concurrent.futures.ProcessPoolExecutor(max_workers=4) as pool:
+    results = pool.map(fib, [34, 34, 34, 34])
+    %time _ = list(results)
