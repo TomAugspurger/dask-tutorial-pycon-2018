@@ -11,7 +11,6 @@ chardet==3.0.4
 click==6.7
 cloudpickle==0.5.2
 cycler==0.10.0
-cytoolz==0.9.0.1
 dask==0.17.3
 dask-glm==0.1.0
 dask-ml==0.4.1
